@@ -1,0 +1,654 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Monkey Brands</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+
+<body class="bg-gray-50">
+
+    <div id="splash" class="fixed inset-0 bg-gray-50 flex items-center justify-center z-[9999]">
+        <img src="image/logo.svg" alt="Logo" class="animate-bounce w-32 h-32">
+    </div>
+
+
+    <header class="mb-2 px-10 sm:hidden sticky top-0 z-50 bg-gray-50 bg-opacity-50 backdrop-blur-md">
+        <div class="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
+            <a class="flex items-center text-2xl font-black" href="/">
+                <img src="image/logo.svg" alt="logo" loading="lazy" width="80">
+            </a>
+            <input class="peer hidden" type="checkbox" id="navbar-open" />
+            <label class="absolute right-0 mt-6 cursor-pointer text-xl sm:hidden" for="navbar-open">
+                <span class="sr-only">Toggle Navigation</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </label>
+            <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
+                <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+                    <li><a class="text-gray-900 hover:text-[#5ebb49]" href="/" onclick="closeNav()">Home</a></li>
+                    <li><a class="text-gray-900 hover:text-[#5ebb49]" href="#about-us" onclick="closeNav()">About Us</a>
+                    </li>
+                    <li><a class="text-gray-900 hover:text-[#5ebb49]" href="#services" onclick="closeNav()">Services</a>
+                    </li>
+                    <li><a class="text-gray-900  hover:text-[#5ebb49]" href="#faq" onclick="closeNav()">FAQ</a></li>
+                    <li><a class="text-gray-900 hover:text-[#5ebb49]" href="#testimonials"
+                            onclick="closeNav()">Testimonials</a></li>
+                    <li><a class="text-gray-900  hover:text-[#5ebb49]" href="#contact" onclick="closeNav()">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <header class="mb-2 px-10  sm:block  hidden sticky top-0 z-50 bg-gray-50 bg-opacity-50 backdrop-blur-md">
+        <div class="relative mx-auto flex max-w-screen-lg items-center justify-between py-4">
+            <!-- Left Navigation -->
+            <nav aria-label="Left Navigation" class="hidden sm:block">
+                <ul class="flex flex-row gap-x-8">
+                    <li class=""><a class="text-gray-900 font-medium hover:text-[#5ebb49]" href="/">Home</a></li>
+                    <li class=""><a class="text-gray-900 font-medium hover:text-[#5ebb49]" href="#about-us">About Us</a>
+                    </li>
+                    <li class=""><a class="text-gray-900 font-medium hover:text-[#5ebb49]" href="#services">Services</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Centered Logo -->
+            <a class="flex items-center text-2xl font-black" href="/">
+                <img src="image/logo.svg" alt="logo" loading="lazy" width="60px">
+            </a>
+            <!-- Right Navigation -->
+            <nav aria-label="Right Navigation" class="hidden sm:block">
+                <ul class="flex flex-row gap-x-8">
+                    <li class=""><a class="text-gray-900 font-medium hover:text-[#5ebb49]" href="#faq">FAQ</a></li>
+                    <li class=""><a class="text-gray-900 font-medium hover:text-[#5ebb49]"
+                            href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class=""><a class="text-gray-900 font-medium hover:text-[#5ebb49]" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pt-12  sm:pt-16">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" data-aos="fade-up" data-aos-duration="2000">
+            <div class="text-center">
+                <p
+                    class="max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight">
+                    Empowering Health Brands to Scale and Succeed. </p>
+                <h1 class="max-w-2xl mx-auto px-6 text-lg text-gray-600 font-inter">
+                    At Big Monkey Brands, we transform health-related consumer products into global success stories.
+                </h1>
+                <div class="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
+                    <a href="#" title=""
+                        class="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-sm font-medium text-gray-900 hover:scale-90 text-white transition-all duration-200 bg-[#5ebb49] border-2 border-transparent sm:w-auto rounded-xl "
+                        role="button">
+                        Get Started
+                    </a>
+                    <a href="#about-us"
+                        class="inline-flex items-center justify-center w-full px-8 py-3 text-sm font-medium text-gray-900 hover:text-white hover:scale-90 transition-all duration-200  border-2 border-[#5ebb49]  sm:w-auto rounded-xl hover:bg-[#5ebb49] "
+                        role="button">Learn More</a>
+                </div>
+            </div>
+            <div class="relative mx-auto mt-4 md:mt-8">
+                <div class="lg:max-w-4xl lg:mx-auto">
+                    <img class="rounded-2xl px-4 md:px-8 " src="hero.png" alt="Hero Image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full max-w-6xl mx-auto  sm:px-6 md:px-8 relative" id="about-us">
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
+                <div class="grid overflow-hidden text-gray-900  md:grid-cols-2 rounded-xl">
+                    <!-- Left Content -->
+                    <aside class="p-8 space-y-4 md:p-16 ">
+                        <h2 class="text-4xl font-bold text-gray-900 tracking-tight md:text-4xl font-headline">
+                            Who We Are
+                        </h2>
+                        <p class="text-gray-600  font-inter">
+                            Big Monkey Brands is a business development company dedicated to creating,
+                            growing, and scaling health-related consumer brands. We serve as strategic
+                            partners, helping businesses transform their vision into impactful, successful
+                            realities.
+                        </p>
+                        <p class="text-gray-600 font-inter">
+                            From crafting compelling brand identities through thoughtful naming,
+                            design, and market positioning to driving growth with expertly planned marketing
+                            strategies, we bring creativity and precision to every project. Our expertise ex
+                            tends to streamlining operations, including product manufacturing, distribution,
+                            and fulfillment, ensuring our partners are set up for sustainable success.
+                        </p>
+                        <p class="text-gray-600 font-inter">
+                            At Big
+                            Monkey Brands, we are committed to building brands that make a difference.
+                        </p>
+                    </aside>
+                    <!-- Right Image -->
+                    <aside class="relative hidden md:block">
+                        <img class="absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg"
+                            src="image/logo.png" alt="Logo Wall">
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16" data-aos="fade-up" data-aos-duration="2000">
+        <div class="w-full max-w-6xl mx-auto px-4 sm:px-20 md:px-20 relative">
+            <div class="shadow-lg rounded-xl aos-init aos-animate">
+                <div class="grid overflow-hidden text-white  md:grid-cols-2 bg-[#5ebb49] rounded-xl">
+                    <!-- Left Side (Text Content) -->
+                    <aside class="p-8 space-y-4 md:p-16">
+                        <p class="text-3xl font-bold">
+                            Want to know how we can help your brand grow?
+                        </p>
+                        <div>
+                            <a href="#contact"
+                                class="inline-block mt-5 mx-auto rounded-md bg-white hover:scale-90 cursor-pointer px-5 py-3 text-base font-medium text-black shadow  sm:px-5">
+                                <p class="text-base">Contact Us →</p>
+                            </a>
+                        </div>
+                    </aside>
+
+                    <!-- Right Side (Background Image or Content) -->
+                    <div id="bga" class="relative hidden md:block bg-cover bg-center"
+                        style="background-image: url('image/bga.png');">
+                        <!-- Optional: You can add content here or just use as background -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section relative   aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" id="services">
+        <div class="container xl:max-w-6xl mx-auto px-4">
+            <!-- Heading start -->
+            <div class="text-center mx-auto mb-12 lg:px-20">
+                <h2 class="text-4xl sm:text-5xl leading-normal mb-2 font-bold text-gray-900">Our Services</h2>
+                <p class="text-gray-600">
+                    At Big Monkey Brands, we help businesses grow with tailored services, from brand development to
+                    marketing strategies and
+                    streamlined operations.
+
+                </p>
+            </div>
+            <!-- Heading end -->
+            <!-- Row start -->
+            <div class="container mx-auto">
+                <div class="flex flex-wrap -m-4 text-center">
+                    <!-- Card 2: branddev -->
+                    <div class="p-4 md:w-1/3 sm:w-1/2 w-full aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2000">
+                        <div
+                            class="group border-[1px] border-[#5ebb49] cursor-pointer px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:bg-[#5ebb49]">
+                            <div class="flex justify-center items-center">
+                                <!-- Normal logo -->
+                                <img src="image/branddev.svg" width="60" alt="Engagement Icon"
+                                    class="group-hover:hidden">
+
+                                <!-- Hovered logo -->
+                                <img src="image/branddev-hover.svg" width="60" alt="Engagement Icon Hover"
+                                    class="hidden group-hover:block">
+                            </div>
+                            <br>
+                            <h2 class="title-font font-medium text-gray-900 group-hover:text-white">Brand Development
+                            </h2>
+                            <p class="leading-relaxed text-sm text-gray-500 group-hover:text-white">
+                                Your brand is more than just a logo it's the heart of your business. At Big Monkey
+                                Brands, we create compelling brand
+                                identities that resonate with your audience. From crafting the perfect name to designing
+                                standout logos and defining
+                                your brand's unique position in the market, we ensure your business leaves a lasting
+                                impression. Let us help you build a
+                                brand that stands out and connects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 1: Engagement -->
+                    <div class="p-4 md:w-1/3 sm:w-1/2 w-full aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2000">
+                        <div
+                            class="group border-[1px] border-[#5ebb49] cursor-pointer px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:bg-[#5ebb49]">
+                            <div class="flex justify-center items-center">
+                                <!-- Normal logo -->
+                                <img src="image/MarketingStrategy.svg" width="60" alt="Engagement Icon"
+                                    class="group-hover:hidden">
+
+                                <!-- Hovered logo -->
+                                <img src="image/MarketingStrategy-hover.svg" width="60" alt="Engagement Icon Hover"
+                                    class="hidden group-hover:block">
+                            </div>
+                            <br>
+                            <h2 class="title-font font-medium text-gray-900 group-hover:text-white">Marketing Strategy
+                            </h2>
+                            <p class="leading-relaxed text-sm text-gray-500 group-hover:text-white">
+                                A strong marketing strategy drives growth and builds meaningful connections with your
+                                audience. At Big Monkey
+                                Brands, we
+                                craft campaigns that make an impact. From strategic planning and compelling content
+                                creation to in-depth analytics, we
+                                ensure every move you make is data-driven and results-focused. Let us help you turn your
+                                vision into actionable
+                                strategies that deliver measurable success.
+
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 1: Engagement -->
+                    <div class="p-4 md:w-1/3 sm:w-1/2 w-full aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2000">
+                        <div
+                            class="group border-[1px] border-[#5ebb49] cursor-pointer px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:bg-[#5ebb49]">
+                            <div class="flex justify-center items-center">
+                                <!-- Normal logo -->
+                                <img src="image/OperationsManagement.svg" width="60" alt="Engagement Icon"
+                                    class="group-hover:hidden">
+
+                                <!-- Hovered logo -->
+                                <img src="image/OperationsManagement-hover.svg" width="60" alt="Engagement Icon Hover"
+                                    class="hidden group-hover:block">
+                            </div>
+                            <br>
+                            <h2 class="title-font font-medium text-gray-900 group-hover:text-white"> Operations
+                                Management
+
+                            </h2>
+                            <p class="leading-relaxed text-sm text-gray-500 group-hover:text-white">
+                                Efficiency and reliability are key to successful operations. At Big Monkey
+                                Brands, we
+                                streamline your business processes
+                                from start to finish. Whether it’s product manufacturing, distribution, or fulfillment,
+                                we provide customized solutions
+                                that optimize your operations and ensure your products reach customers seamlessly. Let
+                                us handle the details so you can
+                                focus on growing your business.
+
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- Row end -->
+        </div>
+    </section>
+
+
+    <section class="relative mx-auto w-full py-16 px-5 font-sans text-gray-900 sm:px-20 md:max-w-screen-lg "
+        data-aos="fade-up" data-aos-duration="2000" id="faq">
+        <h2 class="mb-5 text-center font-sans text-4xl  sm:text-5xl font-bold">Frequently Asked Questions</h2>
+        <p class="mb-12 text-center text-lg text-gray-600">We have written down answers to some of the frequently asked
+            questions. But, if you still have any queries, feel free to contact us .</p>
+
+        <ul class="space-y-4">
+            <li class="text-left">
+                <label for="accordion-1" class="relative flex flex-col rounded-md border border-[#5ebb49] ">
+                    <input class="peer hidden" type="checkbox" id="accordion-1" checked />
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="absolute right-0 top-4 ml-auto mr-5 h-4 text-gray-500 transition peer-checked:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="#5ebb49" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <div class="relative ml-4 cursor-pointer select-none items-center py-4 pr-12">
+                        <h3 class="text-base text-gray-900 font-medium ">What services does Big Monkey Brands provide?
+                        </h3>
+                    </div>
+                    <div class="max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-96">
+                        <div class="p-5">
+                            <p class="text-sm">We specialize in helping health-related consumer brands grow through
+                                three key areas: brand development, marketing
+                                strategy, and operations management.
+                            </p>
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="text-left">
+                <label for="accordion-2" class="relative flex flex-col rounded-md border border-[#5ebb49] ">
+                    <input class="peer hidden" type="checkbox" id="accordion-2" />
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="absolute right-0 top-4 ml-auto mr-5 h-4 text-gray-500 transition peer-checked:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="#5ebb49" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <div class="relative ml-4 cursor-pointer select-none items-center py-4 pr-12">
+                        <h3 class="text-base text-gray-900 font-medium  ">What types of brands do you work with?</h3>
+                    </div>
+                    <div class="max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-96">
+                        <div class="p-5">
+                            <p class="text-sm">We partner with health-focused consumer brands, ranging from startups to
+                                established businesses, looking to scale their
+                                operations or redefine their market presence.
+                            </p>
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+
+
+            <li class="text-left">
+                <label for="accordion-3" class="relative flex flex-col rounded-md border border-[#5ebb49] ">
+                    <input class="peer hidden" type="checkbox" id="accordion-3" />
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="absolute right-0 top-4 ml-auto mr-5 h-4 text-gray-500 transition peer-checked:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="#5ebb49" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <div class="relative ml-4 cursor-pointer select-none items-center py-4 pr-12">
+                        <h3 class="text-base text-gray-900 font-medium">Why should I choose Big Monkey Brands?</h3>
+                    </div>
+                    <div class="max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-96">
+                        <div class="p-5">
+                            <p class="text-sm">Our team combines expertise in branding, marketing, and operational
+                                efficiency to create customized growth strategies
+                                tailored to your business goals.
+                            </p>
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="text-left">
+                <label for="accordion-4" class="relative flex flex-col rounded-md border border-[#5ebb49] ">
+                    <input class="peer hidden" type="checkbox" id="accordion-4" />
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="absolute right-0 top-4 ml-auto mr-5 h-4 text-gray-500 transition peer-checked:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="#5ebb49" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <div class="relative ml-4 cursor-pointer select-none items-center py-4 pr-12">
+                        <h3 class="text-base text-gray-900 font-medium">Do you work with startups or only established
+                            brands?
+                        </h3>
+                    </div>
+                    <div class="max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-96">
+                        <div class="p-5">
+                            <p class="text-sm">We work with both! Whether you're starting from scratch or looking to
+                                take your brand to the next level, we tailor our
+                                approach to meet your unique needs.
+                            </p>
+                        </div>
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+    <section data-aos="fade-up" data-aos-duration="2000">
+        <div class="w-full max-w-6xl mx-auto px-4 sm:px-20 md:px-20 relative">
+            <div class="shadow-lg rounded-xl aos-init aos-animate">
+                <div class="grid overflow-hidden text-white  md:grid-cols-2 bg-[#5ebb49] rounded-xl">
+                    <!-- Left Side (Text Content) -->
+                    <aside class="p-8 space-y-4 md:p-16">
+                        <p class="text-3xl font-bold">
+                            Ready to Grow Your Brand to the Next Level?
+                        </p>
+                        <div>
+                            <a href="#contact"
+                                class="inline-block mt-5 mx-auto rounded-md bg-white hover:scale-90 cursor-pointer px-5 py-3 text-base font-medium text-black shadow  sm:px-5">
+                                <p class="text-base">Let's Talk →</p>
+                            </a>
+                        </div>
+                    </aside>
+                    <!-- Right Side (Background Image or Content) -->
+                    <div id="bga" class="relative hidden md:block bg-cover bg-center"
+                        style="background-image: url('image/growbg.png');">
+                        <!-- Optional: You can add content here or just use as background -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="flex items-center justify-center sm:px-20" id="testimonials" data-aos="fade-up"
+        data-aos-duration="2000">
+        <div class="w-full px-5 py-16 text-gray-800">
+            <div class="w-full max-w-6xl mx-auto">
+                <div class="text-center max-w-xl mx-auto mb-16">
+                    <h2 class="mb-5 text-center font-sans text-4xl  sm:text-5xl font-bold">What People
+                        Are Saying.
+                    </h2>
+                </div>
+                <div class="-mx-3 md:flex items-start">
+                    <div class="px-3 md:w-1/3">
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-[#5ebb49] p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 ">
+                                    <img src="https://i.pravatar.cc/150?img=30" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Kenzie Edgar.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Big
+                                    Monkey Brands transformed our business. Their creative branding ideas and marketing
+                                    strategies helped us double our
+                                    revenue in just six months!<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-[#5ebb49] p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 ">
+                                    <img src="https://i.pravatar.cc/150?img=33" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Stevie Tifft.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Partnering
+                                    with Big Monkey Brands was the best decision we made. They streamlined our
+                                    operations, and now we’re scaling
+                                    faster than we ever imagined.<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 md:w-1/3">
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-[#5ebb49] p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 ">
+                                    <img src="https://i.pravatar.cc/150?img=12" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Tommie Ewart.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>The
+                                    team at Big Monkey Brands is brilliant! They not only helped us redefine our brand
+                                    but also created a powerful
+                                    marketing campaign that connected with our audience like never before.<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-[#5ebb49] p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 ">
+                                    <img src="https://i.pravatar.cc/150?img=20" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Charlie Howse.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Their
+                                    expertise in both branding and operations gave us a complete solution. We now have a
+                                    clear identity, efficient
+                                    production, and growing customer loyalty.<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 md:w-1/3">
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-[#5ebb49] p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 ">
+                                    <img src="https://i.pravatar.cc/150?img=5" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Nevada Herbertson.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Big
+                                    Monkey Brands took our idea and turned it into a brand we’re proud of. They truly
+                                    understand what it takes to create
+                                    a successful health-focused business.<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-[#5ebb49] p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 ">
+                                    <img src="https://i.pravatar.cc/150?img=51" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Kris Stanton.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Big
+                                    Monkey Brands didn’t just help us grow; they made our vision come to life. From the
+                                    perfect brand name to a seamless
+                                    distribution strategy, they were with us every step of the way.<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="font-sans text-base text-gray-900" id="contact" data-aos="fade-up" data-aos-duration="2000">
+        <div class="text-base text-gray-900">
+            <div class="mx-auto w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+                <div class="mx-2  text-center md:mx-auto md:w-2/3 md:pb-12">
+                    <h1 class="mb-4 text-3xl font-black sm:text-5xl xl:text-6xl">Contact us</h1>
+                    <div class="text-lg sm:text-xl xl:text-xl">
+                        <div class="text-gray-600">
+                            <p class="mb-4">Got a technical issue? Want to send feedback about a beta feature? Need
+                                details about our Business plan? Let us know.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="mx-auto mb-20 flex w-full max-w-screen-lg flex-col overflow-hidden rounded-xl text-gray-900 md:flex-row ">
+            <form class="mx-auto w-full max-w-xl border-[#5ebb49] px-10 py-8 md:px-8">
+                <div class="mb-4">
+                    <label class="text mb-2 block font-medium" for="email">Your e-mail:</label>
+                    <input
+                        class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:border-[#5ebb49] focus:ring focus:ring-[#5ebb49] focus:ring-offset-2"
+                        id="email" type="email" required="" />
+                </div>
+                <div class="mb-4">
+                    <label class="text mb-2 block font-medium" for="subject">Subject:</label>
+                    <input
+                        class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:border-[#5ebb49] focus:ring focus:ring-[#5ebb49] focus:ring-offset-2"
+                        id="subject" type="subject" required="" />
+                </div>
+                <div class="mb-4">
+                    <label class="text mb-2 block font-medium" for="message">Message:</label>
+                    <textarea
+                        class="h-52 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:border-[#5ebb49] focus:ring focus:ring-[#5ebb49] focus:ring-offset-2"
+                        id="message" required=""></textarea>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex-1"></div>
+                    <button class="rounded-xl bg-[#5ebb49] px-4 py-3 text-center font-bold text-white hover:scale-90"
+                        type="submit">Send message</button>
+                </div>
+            </form>
+            <div class="mt-10 bg-[#5ebb49] px-10 py-8 text-gray-100 md:mt-0 md:ml-auto">
+                <div class="">
+                    <p class="mb-4 font-medium border-b pb-2">OFFICE HOURS</p>
+                    <p class="mb-4">Monday – Thursday: 08:00 – 16:00</p>
+                    <p class="mb-4">Friday: 08:00 - 15:00</p>
+                    <p class="mb-4">Weekend: Closed</p>
+                    <p class="mb-4">
+                        Email:
+                        <a href="#" class="font-semibold underline">BigMonkeyBrands@support.io</a>
+                    </p>
+                    <p class="mb-4">
+                        Phone:
+                        <a href="#" class="font-semibold underline">+14 (0) 00-00 00 00</a>
+                    </p>
+                    <hr class="my-2 h-0 border-t border-r-0 border-b-0 border-l-0 border-gray-300" />
+                    <p class="mb-4">Org.no: 63452-2832</p>
+                    <p class="mb-4">VAT no: 32353</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8">
+        <div class="border-t border-slate-900/5 py-10">
+            <img src="image/logo.svg" alt="logo" class="mx-auto h-20 w-auto ">
+            <p id="footer-text" class="mt-5 text-center text-sm leading-6 text-gray-600"></p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="sticky.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Function to close the navigation
+        function closeNav() {
+            document.getElementById('navbar-open').checked = false;
+        }
+    </script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
